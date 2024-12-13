@@ -1,18 +1,15 @@
-import React from 'react'
-import Header from './Header'
-import MainContainer from './MainContainer'
-import Faq from "./Faq"
-import Services from './Services'
+import React from "react";
+import Header from "./Header";
+
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <Header/>
-      <MainContainer/>
-      <Services/>
-      <Faq/>
+      <Header />
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

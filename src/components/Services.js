@@ -15,7 +15,7 @@ const Services = () => {
       </div>
       <div className="flex justify-center">
         <button className="bg-blue-600 text-2xl font-semibold my-10 mx-24 p-4 rounded-md text-white ">
-          View All Services
+          VIEW ALL SERVICES
         </button>
       </div>
     </div>
