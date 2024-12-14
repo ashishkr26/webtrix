@@ -10,7 +10,7 @@ const MainContainer = () => {
         backgroundSize: "cover", // Ensures the image covers the entire div
         backgroundPosition: "center", // Centers the image
       }}
-      className=" p-2 flex flex-col w-auto items-start bg-gray-50"
+      className=" p-2 flex flex-col w-auto items-start bg-gray-50 font-poppins"
     >
       <div className="p-2 m-2 bg-yellow-400 rounded-r-full h-16">
         <span className="bg-gray-700 relative top-2 p-2 text-2xl rounded-r-full font-semibold text-white hover:bg-gray-500">

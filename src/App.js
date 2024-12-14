@@ -6,6 +6,7 @@ import MainContainer from "./components/MainContainer";
 import Services from "./components/Services";
 import Faq from "./components/Faq";
 import ChatBot from "./components/ChatBot";
+import WebtrixSevice from "./components/services/WebtrixSevice";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
           path: "/about",
           element: <About />,
         },
+        {
+          path:"/our-services",
+          element:<WebtrixSevice/>
+        }
       ],
     },
   ]);

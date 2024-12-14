@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <div className="p-4 bg-gray-200 my-10">
+    <div className="p-4 bg-gray-200 my-10 font-poppins">
       <div className=" text-5xl font-semibold my-10 mx-24 text-center">
         Empowering Businesses with Software and Web Excellence
       </div>
