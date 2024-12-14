@@ -5,6 +5,7 @@ import "./index.css";
 import MainContainer from "./components/MainContainer";
 import Services from "./components/Services";
 import Faq from "./components/Faq";
+import ChatBot from "./components/ChatBot";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -17,6 +18,7 @@ function App() {
           element: (
             <>
               <MainContainer />
+              <ChatBot/>
               <Services />
               <Faq />
             </>

@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const Header = () => {
   const [sideIcon, setSideIcon] = useState(false);
   return (
-    <div className="bg-yellow-400 text-white opacity-70ont-semibold p-2 lg:text-lg md:text-base sm:text-sm shadow-lg flex justify-between">
+    <div className="bg-yellow-400 text-white opacity-70ont-semibold p-2 lg:text-lg md:text-base sm:text-sm shadow-lg flex justify-between sticky top-0 z-10">
       <ul className="flex flex-row font-semibold">
         <li onClick={() => setSideIcon(!sideIcon)} className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
           {sideIcon ? (
@@ -27,7 +27,7 @@ const Header = () => {
         </li>
 
       </ul>
-      <div><button className="bg-gray-500 p-2 mt-1 rounded-md border border-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out"> Demo On Demand</button></div>
+      <div><button className="bg-gradient-to-r from-gray-800  to-gray-400 p-2 mt-1 rounded-md border border-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out"> Demo On Demand</button></div>
     </div>
   );
 };
