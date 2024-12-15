@@ -10,9 +10,9 @@ const Faq = () => {
       backgroundPosition: "center", // Centers the image
       
     }}
-    className=" p-2 m-4 flex flex-col w-auto bg-gray-50 h-96 text-5xl items-center"
+    className=" p-2 m-4 flex flex-col w-auto bg-gray-50 h-96 text-5xl items-center font-poppins"
   >
-      Frequently Asked Questions
+     <span className='mt-20 font-poppins'>Frequently Asked Questions</span> 
     </div>
   )
 }
