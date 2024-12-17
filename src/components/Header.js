@@ -24,9 +24,11 @@ const Header = () => {
             <CloseIcon sx={{ fontSize: 32 }} />
           )}
         </li>
-        <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
-          Home
-        </li>
+        <Link to="/">
+          <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+            Home
+          </li>
+        </Link>
         <li
           tabIndex={0}
           // onMouseEnter={() => setOpen(true)}
@@ -46,11 +48,11 @@ const Header = () => {
             </Drawer>
           )}
         </li>
-       <Link to="/our-services">
-       <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex">
-          Services{" "}
-        </li>
-       </Link> 
+        <Link to="/our-services">
+          <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex">
+            Services{" "}
+          </li>
+        </Link>
         <li className="px-10 py-1 hover:scale-105 transition-all duration-300 ease-in-out">
           <input
             className="lg:w-[500px] md:w-56 sm:w-32 p-2 flex flex-grow justify-center items-center rounded-full"
