@@ -8,6 +8,7 @@ import Faq from "./components/Faq";
 import ChatBot from "./components/ChatBot";
 import WebtrixSevice from "./components/services/WebtrixSevice";
 import QuoteOnDemand from "./components/QuoteOnDemand";
+import HomeCarousel from "./components/HomeCarousel";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -21,6 +22,7 @@ function App() {
             <>
               <MainContainer />
               <ChatBot/>
+              <HomeCarousel/>
               <Services />
               <Faq />
             </>
