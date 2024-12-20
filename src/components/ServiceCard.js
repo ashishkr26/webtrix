@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ item }) => {
   return (
@@ -10,9 +11,11 @@ const ServiceCard = ({ item }) => {
       </div>
       {/* Absolute positioning for the button */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <button className="bg-slate-800 text-white p-2 rounded-sm">
-          Learn More
-        </button>
+        <Link to={`${item.link}`}>
+          <button className="bg-slate-800 text-white p-2 rounded-sm">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -10,6 +10,8 @@ import WebtrixSevice from "./components/services/WebtrixSevice";
 import QuoteOnDemand from "./components/QuoteOnDemand";
 import HomeCarousel from "./components/HomeCarousel";
 import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
+import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
+import UIUXService from "./components/services/UIUXService";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -44,6 +46,14 @@ function App() {
         {
           path:"/web-developement-service",
           element:<WebDevelopmentServicePage/>
+        },
+        {
+          path:"/digital-marketing-service",
+          element:<DigitalMarketingServicePage/>
+        },
+        {
+          path:"/UI-UX-service",
+          element:<UIUXService/>
         },
         
       ],
