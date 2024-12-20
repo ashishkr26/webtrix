@@ -62,10 +62,12 @@ const Header = () => {
         </li>
       </ul>
       <div>
-        <button className="bg-gradient-to-r from-gray-800  to-gray-400 p-2 mt-1 rounded-md border border-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out">
+       <Link to="quote-on-demand">
+       <button className="bg-gradient-to-r from-gray-800  to-gray-400 p-2 mt-1 rounded-md border border-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out">
           {" "}
           Demo On Demand
         </button>
+       </Link> 
       </div>
     </div>
   );

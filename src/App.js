@@ -9,6 +9,7 @@ import ChatBot from "./components/ChatBot";
 import WebtrixSevice from "./components/services/WebtrixSevice";
 import QuoteOnDemand from "./components/QuoteOnDemand";
 import HomeCarousel from "./components/HomeCarousel";
+import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -39,7 +40,12 @@ function App() {
         {
           path:"/quote-on-demand",
           element:<QuoteOnDemand/>
-        }
+        },
+        {
+          path:"/web-developement-service",
+          element:<WebDevelopmentServicePage/>
+        },
+        
       ],
     },
   ]);
