@@ -45,12 +45,15 @@ const MainContainer = () => {
         </span>
       </div>
       <div className="p-2 m-2 bg-yellow-400 rounded-r-full h-16">
+        <Link to="/mobile-app-service">
         <span className="bg-gray-700 relative top-2 p-2 text-2xl rounded-r-full font-semibold text-white hover:bg-gray-500">
           <span className="relative -top-1">
             <AutoAwesomeMotionTwoToneIcon />
           </span>{" "}
           Mobile App Development
         </span>
+        </Link>
+      
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import HomeCarousel from "./components/HomeCarousel";
 import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
 import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
 import UIUXService from "./components/services/UIUXService";
+import MobileAppService from "./components/services/MobiileAppService";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -54,6 +55,10 @@ function App() {
         {
           path:"/UI-UX-service",
           element:<UIUXService/>
+        },
+        {
+          path:"/mobile-app-service",
+          element:<MobileAppService/>
         },
         
       ],
