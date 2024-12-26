@@ -9,9 +9,9 @@ const MobileAppService = () => {
   return (
     <div className="bg-gray-100 text-gray-800">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-10 text-center">
+      <section className="bg-gray-700 text-white py-10 text-center">
         <h1 className="text-4xl font-bold">Mobile App Development</h1>
-        <p className="mt-4 text-lg">
+        <p className="mt-4 text-lg text-brightgreen">
           Empower your business with innovative, user-friendly, and scalable mobile applications.
         </p>
       </section>
@@ -73,13 +73,13 @@ const MobileAppService = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-blue-600 text-white py-10 text-center">
+      <section className="bg-gray-700 text-white py-10 text-center">
         <h2 className="text-3xl font-bold">Ready to Build Your Mobile App?</h2>
         <p className="mt-4">
           Contact us today to turn your app idea into reality.
         </p>
         <Link to="/contact">
-          <button className="mt-6 bg-white text-blue-600 font-bold py-2 px-6 rounded-lg shadow-lg">
+          <button className="mt-6 bg-white text-brightgreen font-bold py-2 px-6 rounded-lg shadow-lg">
             Get Started
           </button>
         </Link>

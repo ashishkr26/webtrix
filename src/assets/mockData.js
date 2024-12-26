@@ -18,6 +18,7 @@ export const serviceData = [
     id: 2,
     icon: <InstallMobileOutlinedIcon sx={{ fontSize: 64 }} />,
     name: "Mobile App Development",
+    link:"/mobile-app-service",
     description:
       "Webtrix excels in creating innovative and user-friendly mobile applications to enhance user engagement and experience.",
   },

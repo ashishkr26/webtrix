@@ -10,11 +10,11 @@ const WebDevelopmentServicePage = () => {
   return (
     <div className="bg-gray-100 text-gray-800 font-poppins">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-10 text-center">
+      <section className="bg-gray-700 text-white py-10 text-center">
         <h1 className="text-4xl font-bold">
           Professional Web Development Services
         </h1>
-        <p className="mt-4 text-lg ">
+        <p className="mt-4 text-lg text-brightgreen ">
           Build stunning websites and web apps tailored to your business needs.
         </p>
       </section>
@@ -114,14 +114,14 @@ const WebDevelopmentServicePage = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-blue-600 text-white py-10 text-center">
+      <section className="bg-gray-700 text-white py-10 text-center">
         <h2 className="text-3xl font-bold">
           Ready to Elevate Your Online Presence?
         </h2>
         <p className="mt-4">
           Contact us today to discuss your project and get a free quote.
         </p>
-        <button className="mt-6 bg-white text-blue-600 font-bold py-2 px-6 rounded-lg shadow-lg">
+        <button className="mt-6 bg-white text-brightgreen font-bold py-2 px-6 rounded-lg shadow-lg">
           Get Started
         </button>
       </section>
