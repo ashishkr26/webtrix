@@ -15,6 +15,7 @@ import UIUXService from "./components/services/UIUXService";
 import MobileAppService from "./components/services/MobiileAppService";
 import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -37,6 +38,10 @@ function App() {
         {
           path: "/about",
           element: <About />,
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs />,
         },
         {
           path: "/our-services",
