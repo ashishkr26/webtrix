@@ -13,6 +13,8 @@ import WebDevelopmentServicePage from "./components/services/WebDevelomentServic
 import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
 import UIUXService from "./components/services/UIUXService";
 import MobileAppService from "./components/services/MobiileAppService";
+import { Provider } from "react-redux";
+import appStore from "./assets/store/appStore";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -25,8 +27,8 @@ function App() {
           element: (
             <>
               <MainContainer />
-              <ChatBot/>
-              <HomeCarousel/>
+              <ChatBot />
+              <HomeCarousel />
               <Services />
               <Faq />
             </>
@@ -37,34 +39,37 @@ function App() {
           element: <About />,
         },
         {
-          path:"/our-services",
-          element:<WebtrixSevice/>
+          path: "/our-services",
+          element: <WebtrixSevice />,
         },
         {
-          path:"/quote-on-demand",
-          element:<QuoteOnDemand/>
+          path: "/quote-on-demand",
+          element: <QuoteOnDemand />,
         },
         {
-          path:"/web-developement-service",
-          element:<WebDevelopmentServicePage/>
+          path: "/web-developement-service",
+          element: <WebDevelopmentServicePage />,
         },
         {
-          path:"/digital-marketing-service",
-          element:<DigitalMarketingServicePage/>
+          path: "/digital-marketing-service",
+          element: <DigitalMarketingServicePage />,
         },
         {
-          path:"/UI-UX-service",
-          element:<UIUXService/>
+          path: "/UI-UX-service",
+          element: <UIUXService />,
         },
         {
-          path:"/mobile-app-service",
-          element:<MobileAppService/>
+          path: "/mobile-app-service",
+          element: <MobileAppService />,
         },
-        
       ],
     },
   ]);
-  return <RouterProvider router={appRouter} />;
+  return (
+    <Provider store={appStore}>
+      <RouterProvider router={appRouter} />;
+    </Provider>
+  );
 }
 
 export default App;

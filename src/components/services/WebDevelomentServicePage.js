@@ -20,60 +20,61 @@ const WebDevelopmentServicePage = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="py-10 px-6 bg-white">
+      <section className="py-10 px-6 bg-white font-poppins">
         <h2 className="text-3xl font-bold text-center mb-6">How We Work</h2>
-        <div className="grid md:grid-cols-3 gap-32">
-          <div className="p-2 shadow-lg rounded-lg text-center bg-gray-200">
+        <div className="grid md:grid-cols-3 gap-20">
+
+          <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">1</div>
             <h3 className=" font-bold mb-2">Requirement Gathering</h3>
             <div className="flex justify-center items-center">
-              <img className="h-32  " alt="requirements" src={requirement} />
+              <img className="h-40  " alt="requirements" src={requirement} />
             </div>
-            <p className="text-sm">
+            <p className="text-sm my-2 py-2 px-4">
               Understand your business goals, target audience, and technical
               needs to create a roadmap.
             </p>
           </div>
-          <div className="p-2 shadow-lg rounded-lg text-center bg-gray-200">
+          <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">2</div>
             <h3 className=" font-bold mb-2">Planning & Design</h3>
             <div className="flex justify-center items-center">
-              <img className="h-32  " alt="requirements" src={planning} />
+              <img className="h-40 " alt="requirements" src={planning} />
             </div>
-            <p className="text-sm">
+            <p className="text-sm my-2 py-2 px-4">
               Create wireframes, mockups, and project plans to visualize the
               final product.
             </p>
           </div>
-          <div className="p-2 shadow-lg rounded-lg text-center bg-gray-200">
+          <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">3</div>
             <h3 className=" font-bold mb-2">Development</h3>
             <div className="flex justify-center items-center">
-              <img className="h-32  " alt="requirements" src={developement} />
+              <img className="h-40  " alt="requirements" src={developement} />
             </div>
-            <p className="text-sm">
+            <p className="text-sm my-2 py-2 px-4">
               Build the frontend and backend using the latest technologies,
               ensuring responsiveness and functionality.
             </p>
           </div>
-          <div className="p-2 shadow-lg rounded-lg text-center bg-gray-200">
+          <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">4</div>
             <h3 className=" font-bold mb-2">Testing</h3>
             <div className="flex justify-center items-center">
-              <img className="h-32  " alt="requirements" src={testing} />
+              <img className="h-40  " alt="requirements" src={testing} />
             </div>
-            <p className="text-sm">
+            <p className="text-sm my-2 py-2 px-4">
               Conduct thorough testing to ensure the website is bug-free, fast,
               and user-friendly.
             </p>
           </div>
-          <div className="p-2 shadow-lg rounded-lg text-center bg-gray-200">
+          <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">5</div>
             <h3 className=" font-bold mb-2">Deployment</h3>
             <div className="flex justify-center items-center">
-              <img className="h-32  " alt="requirements" src={deployement} />
+              <img className="h-40  " alt="requirements" src={deployement} />
             </div>
-            <p className="text-sm">
+            <p className="text-sm my-2 py-2 px-4">
               Launch the website on a live server and ensure smooth operation
               with ongoing support.
             </p>
