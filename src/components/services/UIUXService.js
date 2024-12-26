@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import BrushIcon from '@mui/icons-material/Brush';
 import DevicesIcon from '@mui/icons-material/Devices';
+import EnquiryForm from '../EnquiryForm';
 
 const UIUXService = () => {
   return (
@@ -55,6 +56,12 @@ const UIUXService = () => {
           </button>
         </Link>
       </section>
+      <div className="py-10 px-6">
+        <h2 className="text-3xl font-bold mx-12 mb-6">Contact Us</h2>
+        <div className=" w-1/2 border shadow-md">
+          <EnquiryForm/>
+        </div>
+      </div>
     </div>
   );
 };

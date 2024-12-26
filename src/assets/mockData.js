@@ -48,6 +48,7 @@ export const serviceData = [
     id: 6,
     icon: <CodeOutlinedIcon sx={{ fontSize: 64 }} />,
     name: "Software Development",
+    link:"/mobile-app-service",
     description:
       "Webtrix develops custom software solutions tailored to meet your unique business needs.",
   },
