@@ -21,7 +21,7 @@ const Header = () => {
     setOpen(newOpen);
   };
   return (
-    <div className="font-poppins bg-yellow-400 text-white opacity-70ont-semibold p-2 lg:text-lg md:text-base sm:text-sm shadow-lg flex justify-between sticky top-0 z-10">
+    <div className="font-poppins bg-yellow-400 text-white  p-2 lg:text-lg md:text-base sm:text-sm shadow-lg flex justify-between sticky top-0 z-10">
       <ul className="flex flex-row font-semibold">
         <li
           onClick={handleToggleMenu}
