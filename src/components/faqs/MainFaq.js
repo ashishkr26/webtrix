@@ -36,7 +36,7 @@ const MainFaq = () => {
         {faqList.map((faq, index) => (
           <div
             key={index}
-            className="p-4 border border-amber-400 rounded-lg shadow-sm bg-white"
+            className="p-4 border border-amber-400 rounded-md shadow-sm bg-white"
           >
             <h3
               onClick={() =>

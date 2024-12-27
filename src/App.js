@@ -16,6 +16,7 @@ import MobileAppService from "./components/services/MobiileAppService";
 import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -32,6 +33,7 @@ function App() {
               <HomeCarousel />
               <Services />
               <Faq />
+              <Footer/>
             </>
           ),
         },
