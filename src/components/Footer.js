@@ -57,6 +57,7 @@ const Footer = () => {
           presence and drive long-term success.
         </p>
       </div>
+      <div className="h-4 bg-white"></div>
     </div>
   );
 };
