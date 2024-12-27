@@ -26,7 +26,7 @@ const SideBar = () => {
           </span>
           <span className="mt-2 px-2">Products</span>
         </li>
-        <Link to="/our-services" >
+        <Link to="/our-services">
           <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
             <span className="text-emerald-600">
               <StreamIcon />
@@ -34,12 +34,14 @@ const SideBar = () => {
             <span className="mt-2 px-2">Services</span>
           </li>
         </Link>
-        <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
-          <span className="text-emerald-600">
-            <CableIcon />
-          </span>
-          <span className="mt-2 px-2">Contact Us</span>
-        </li>
+        <Link to="/contact-us">
+          <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+            <span className="text-emerald-600">
+              <CableIcon />
+            </span>
+            <span className="mt-2 px-2">Contact Us</span>
+          </li>
+        </Link>
         <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
           <span className="text-emerald-600">
             <HelpIcon />
