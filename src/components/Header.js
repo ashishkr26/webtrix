@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Drawer } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
@@ -10,16 +9,13 @@ import { toggleMenu } from "../assets/store/appSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const [sideIcon, setSideIcon] = useState(true);
-  const [open, setOpen] = useState(false);
 
   const handleToggleMenu = () => {
     console.log("toggle");
     setSideIcon(!sideIcon);
     dispatch(toggleMenu());
   };
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  };
+
   return (
     <div className="font-poppins bg-yellow-400 text-white  p-2 lg:text-lg md:text-base sm:text-sm shadow-lg flex justify-between sticky top-0 z-10">
       <ul className="flex flex-row font-semibold">
@@ -40,22 +36,9 @@ const Header = () => {
         </Link>
         <li
           tabIndex={0}
-          // onMouseEnter={() => setOpen(true)}
-          // onBlur={() => setOpen(false)}
           className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex"
         >
           Products
-          {open && (
-            <Drawer
-              sx={{ marginTop: "20px" }}
-              anchor="top"
-              open={open}
-              onClose={toggleDrawer(false)}
-            >
-              {" "}
-              Hello
-            </Drawer>
-          )}
         </li>
         <Link to="/our-services">
           <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex">

@@ -9,9 +9,9 @@ const Faq = () => {
         backgroundImage: `url(${faqbg})`, // Correct syntax for inline styles
         backgroundSize: "cover", // Ensures the image covers the entire div
         backgroundPosition: "center", // Centers the image
-
+        position:""
       }}
-      className="flex flex-col bg-gray-50 h-96  font-poppins items-end"
+      className="flex flex-col bg-gray-50  font-poppins items-end h-full "
     >
       <div className=" font-poppins text-5xl p-4   ">
         Frequently Asked Questions
