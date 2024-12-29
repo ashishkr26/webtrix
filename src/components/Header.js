@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../assets/store/appSlice";
-// import ServiceDrawer from "./headerDrawers/ServiceDrawer";
 
 const Header = () => {
+  const searchText = useRef();
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   const handleToggleMenu = () => {
@@ -44,9 +44,10 @@ const Header = () => {
         </Link>
         <li className="px-10 py-1 hover:scale-105 transition-all duration-300 ease-in-out">
           <input
-            className="lg:w-[500px] md:w-56 sm:w-32 p-2 flex flex-grow justify-center items-center rounded-full"
+            className="lg:w-[500px] md:w-56 sm:w-32 p-2 flex flex-grow justify-center items-center rounded-full text-gray-800 font-light text-base "
             type="text"
             placeholder="Search"
+            ref={searchText}
           />
         </li>
       </ul>
