@@ -45,7 +45,7 @@ function App() {
           element: <ContactUs />,
         },
         {
-          path: "/our-services",
+          path: "/services",
           element: <WebtrixSevice />,
         },
         {

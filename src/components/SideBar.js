@@ -11,7 +11,7 @@ const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   return isMenuOpen === false ? null : (
     <div className="shadow-lg bg-gray-100 w-72 h-full fixed  z-50">
-      <ul className="my-4  text-xl font-semibold" l>
+      <ul className="my-4  text-xl font-semibold">
         <Link to="/">
           <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
             <span className="text-emerald-600">
@@ -26,7 +26,7 @@ const SideBar = () => {
           </span>
           <span className="mt-2 px-2">Products</span>
         </li>
-        <Link to="/our-services">
+        <Link to="/services">
           <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
             <span className="text-emerald-600">
               <StreamIcon />

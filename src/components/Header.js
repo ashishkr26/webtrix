@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../assets/store/appSlice";
 // import ServiceDrawer from "./headerDrawers/ServiceDrawer";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const [sideIcon, setSideIcon] = useState(true);
-
+  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   const handleToggleMenu = () => {
-    console.log("toggle");
-    setSideIcon(!sideIcon);
     dispatch(toggleMenu());
   };
 
@@ -23,7 +20,7 @@ const Header = () => {
           onClick={handleToggleMenu}
           className="p-2 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer"
         >
-          {sideIcon ? (
+          {isMenuOpen === false ? (
             <MenuIcon sx={{ fontSize: 32 }} />
           ) : (
             <CloseIcon sx={{ fontSize: 32 }} />
@@ -40,7 +37,7 @@ const Header = () => {
         >
           Products
         </li>
-        <Link to="/our-services">
+        <Link to="/services">
           <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex">
             Services{" "}
           </li>

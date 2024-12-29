@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import newbg from "../../assets/newbg.png";
+import { useDispatch } from "react-redux";
+import { closeMenu } from "../../assets/store/appSlice";
 
 const WebtrixSevice = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Close the sidebar when the ContactUs page loads
+    dispatch(closeMenu());
+  }, [dispatch]);
   return (
     <div className="m-10 flex justify-between">
       <div>
