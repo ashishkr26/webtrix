@@ -6,6 +6,12 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const Footer = () => {
+  const phoneNumber = "8123897887";
+  const message = "Hi, I would like to connect with you";
+
+  const whatsappLink = `https://wa.me/${phoneNumber}? text =${message}`;
+
+  const Youtube_Channel_Link = "https://www.youtube.com/@ab_maths7843";
   return (
     <>
       <div className="bg-gray-800 h-96 mt-16 text-white grid grid-cols-12 font-poppins p-4">
@@ -38,10 +44,18 @@ const Footer = () => {
               <LinkedInIcon /> LinkedIn
             </li>
             <li>
-              <YouTubeIcon /> YouTube
+              <a
+                href={Youtube_Channel_Link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <YouTubeIcon /> YouTube
+              </a>
             </li>
             <li>
-              <WhatsAppIcon /> WhatsApp
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon /> Whatsapp
+              </a>
             </li>
           </ul>
         </div>

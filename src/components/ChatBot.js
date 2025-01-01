@@ -17,12 +17,12 @@ const ChatBot = () => {
         className="flex items-center space-x-3 cursor-pointer"
         onClick={toggleChat}
       >
-        <div className="px-4 py-2 rounded-full bg-gray-100 shadow-md">
-          <span className="text-sm font-bold text-gray-800">
+        <div className="px-4 py-2 rounded-full shadow-md bg-gray-800">
+          <span className="text-sm font-bold text-white ">
             We Are Here 👋
           </span>
         </div>
-        <div className="bg-blue-500 rounded-full p-2 shadow-lg">
+        <div className="bg-gray-800 rounded-full p-2 shadow-lg">
           <SupportAgentOutlinedIcon
             className="text-white"
             style={{ fontSize: "48px" }}
