@@ -11,7 +11,7 @@ const Faq = () => {
         backgroundPosition: "center", // Centers the image
         position:""
       }}
-      className="flex flex-col bg-gray-50  font-poppins items-end h-full "
+      className="flex flex-col bg-gray-50  font-poppins items-end h-full text-gray-800 "
     >
       <div className=" font-poppins text-5xl p-4   ">
         Frequently Asked Questions
