@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CheckIcon from "@mui/icons-material/Check";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const WebtrixSevice = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,21 @@ const WebtrixSevice = () => {
           <div className="text-blue-600 font-poppins">What we offer ?</div>
           <div className="text-3xl font-semibold font-poppins text-gray-600">
             Services
+          </div>
+          <div>
+            <button className="bg-gray-800 text-white px-2  w-48 py-6 rounded-lg mt-6 ">
+              <span>
+                Request A Demo{" "}
+                <ArrowRightAltIcon
+                  sx={{
+                    fontSize: 32,
+                    transition: "transform 0.2s ease",
+                    transformOrigin: "left center", // Keeps the left side fixed
+                    "&:hover": { transform: "scaleX(1.4)" },
+                  }}
+                />
+              </span>
+            </button>
           </div>
         </div>
         <div className="flex justify-end ">
