@@ -5,6 +5,7 @@ import { closeMenu } from "../../assets/store/appSlice";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import CheckIcon from "@mui/icons-material/Check";
 
 const WebtrixSevice = () => {
   const dispatch = useDispatch();
@@ -36,14 +37,82 @@ const WebtrixSevice = () => {
           of projects.
         </div>
         <div className=" grid grid-cols-12 gap-4 p-4 mx-20 font-poppins  text-gray-700">
-          <div className="col-span-4 shadow-xl mx-2 p-4 rounded-lg h-96 text-center font-semibold border border-gray-100">
-            Website Development
+          <div className="col-span-4 shadow-xl mx-2 p-4 rounded-lg  text-center  border border-gray-100">
+            <p className="text-lg font-semibold text-gray-900 py-4">
+              Website Development
+            </p>
+            <p className="text-sm py-4">
+              Educational Websites <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Business Websites <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Booking Websites <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Portfolio Websites <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Catalogue Wesbites <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              E-Commerce Websites <CheckIcon sx={{ color: "green" }} />
+            </p>
           </div>
-          <div className="col-span-4 shadow-xl mx-2 p-4  rounded-lg h-96 text-center font-semibold border border-gray-100">
-            Mobile App Development
+          <div className="col-span-4 shadow-xl mx-2 p-4  rounded-lg  text-center  border border-gray-100">
+            <p className="text-lg font-semibold text-gray-900 py-4">
+              Mobile App Development
+            </p>
+            <p className="text-sm py-4">
+              Android Applications
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              React Native Developement <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Flutter Apps <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              IPad App Development <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              {" "}
+              Cross-Platform App Development{" "}
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              iOS App Development <CheckIcon sx={{ color: "green" }} />
+            </p>
           </div>
-          <div className="col-span-4 shadow-xl mx-2 p-4  rounded-lg h-96 text-center font-semibold border border-gray-100">
-            Software Development
+          <div className="col-span-4 shadow-xl mx-2 p-4  rounded-lg  text-center  border border-gray-100">
+            <p className="text-lg font-semibold text-gray-900 py-4">
+              Software Development
+            </p>
+            <p className="text-sm py-4">
+              Custom Software Development <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              Enterprise Software Solutions{" "}
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              SaaS (Software as a Service) Development{" "}
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
+
+            <p className="text-sm py-4">
+              Desktop Application Development{" "}
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              CRM and ERP Development <CheckIcon sx={{ color: "green" }} />
+            </p>
+            <p className="text-sm py-4">
+              API Development and Integration{" "}
+              <CheckIcon sx={{ color: "green" }} />
+            </p>
           </div>
         </div>
       </div>
