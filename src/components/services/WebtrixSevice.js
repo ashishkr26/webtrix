@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CheckIcon from "@mui/icons-material/Check";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import ServiceFaq from "./ServiceFaq"
 
 const WebtrixSevice = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,10 @@ const WebtrixSevice = () => {
   return (
     <>
       <div className="m-10 flex justify-between">
-        <div>
+        <div className="flex justify-end w-1/2 ">
+          <img className=" shadow-xl" alt="bg" src={newbg} />
+        </div>
+        <div className="w-1/2 flex flex-col items-center">
           <div className="text-blue-600 font-poppins">What we offer ?</div>
           <div className="text-3xl font-semibold font-poppins text-gray-600">
             Services
@@ -37,9 +41,6 @@ const WebtrixSevice = () => {
               </span>
             </button>
           </div>
-        </div>
-        <div className="flex justify-end ">
-          <img className="w-2/3 shadow-xl" alt="bg" src={newbg} />
         </div>
       </div>
       <div>
@@ -133,6 +134,9 @@ const WebtrixSevice = () => {
         </div>
       </div>
       <TechCarousel />
+      <div>
+        <ServiceFaq/>
+      </div>
     </>
   );
 };
