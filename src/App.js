@@ -12,7 +12,7 @@ import HomeCarousel from "./components/HomeCarousel";
 import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
 import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
 import UIUXService from "./components/services/UIUXService";
-import MobileAppService from "./components/services/MobiileAppService";
+import MobileAppService from "./components/services/MobileAppService";
 import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
 import ContactUs from "./components/ContactUs";
