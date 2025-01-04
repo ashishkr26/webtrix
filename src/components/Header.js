@@ -31,12 +31,14 @@ const Header = () => {
             Home
           </li>
         </Link>
-        <li
-          tabIndex={0}
-          className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex"
-        >
-          Products
-        </li>
+        <Link to="/">
+          <li
+            tabIndex={0}
+            className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex"
+          >
+            Products
+          </li>
+        </Link>
         <Link to="/services">
           <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out flex">
             Services{" "}
