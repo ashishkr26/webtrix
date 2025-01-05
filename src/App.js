@@ -10,6 +10,7 @@ import WebtrixSevice from "./components/services/WebtrixSevice";
 import QuoteOnDemand from "./components/QuoteOnDemand";
 import HomeCarousel from "./components/HomeCarousel";
 import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
+import WebManagementServicePage from "./components/services/WebDevelomentServicePage"
 import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
 import UIUXService from "./components/services/UIUXService";
 import MobileAppService from "./components/services/MobileAppService";
@@ -55,6 +56,10 @@ function App() {
         {
           path: "/web-developement-service",
           element: <WebDevelopmentServicePage />,
+        },
+        {
+          path: "/web-management-service",
+          element: <WebManagementServicePage />,
         },
         {
           path: "/digital-marketing-service",

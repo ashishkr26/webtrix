@@ -8,8 +8,10 @@ import Slider from "react-slick";
 import CheckIcon from "@mui/icons-material/Check";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import ServiceFaq from "./ServiceFaq"
+import { useNavigate } from "react-router-dom";
 
 const WebtrixSevice = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,7 +29,7 @@ const WebtrixSevice = () => {
             Services
           </div>
           <div>
-            <button className="bg-gray-800 text-white px-2  w-48 py-6 rounded-lg mt-6 ">
+            <button onClick={()=>navigate("/quote-on-demand")} className="bg-gray-800 text-white px-2  w-48 py-6 rounded-lg mt-6 ">
               <span>
                 Request A Demo{" "}
                 <ArrowRightAltIcon
