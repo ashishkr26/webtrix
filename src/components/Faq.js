@@ -1,5 +1,5 @@
 import React from "react";
-import faqbg from "../assets/faqbg.jpg";
+import faqbg from "../assets/images/faqbg.jpg";
 import MainFaq from "./faqs/MainFaq";
 
 const Faq = () => {

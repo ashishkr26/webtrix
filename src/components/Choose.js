@@ -1,5 +1,5 @@
 import React from "react";
-import choose from "../assets/choose.jpg";
+import choose from "../assets/images/choose.jpg";
 const Choose = () => {
   return (
     <div className="h-64 my-10 relative">

@@ -1,5 +1,5 @@
 import React from "react";
-import newbg from "../assets/newbg.jpg";
+import newbg from "../assets/images/newbg.jpg";
 import AutoAwesomeMotionTwoToneIcon from "@mui/icons-material/AutoAwesomeMotionTwoTone";
 import { Link } from "react-router-dom";
 

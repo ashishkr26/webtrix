@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import newbg from "../../assets/newbg.png";
+import newbg from "../../assets/images/newbg.png";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../../assets/store/appSlice";
 import "slick-carousel/slick/slick.css";

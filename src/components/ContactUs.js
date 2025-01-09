@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import contactbg from "../assets/contactbg.jpeg";
+import contactbg from "../assets/images/contactbg.jpeg";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../assets/store/appSlice";
 
