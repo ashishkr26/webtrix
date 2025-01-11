@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         brightgreen:'#66FF00', // Custom color name
+        clay: 	'#a59f8c'
       },
     },
   },

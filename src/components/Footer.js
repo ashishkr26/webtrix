@@ -18,32 +18,32 @@ const Footer = () => {
         <div className="p-4 col-span-2">
           <span className="text-lg font-semibold">Important Links</span>
           <ul className="text-sm">
-            <li>Contact Us</li>
-            <li>Support</li>
-            <li>Current Openings</li>
-            <li>Career Page</li>
+            <li className="hover:scale-105 transition-all ease-in-out">Contact Us</li>
+            <li className="hover:scale-105 transition-all ease-in-out">Support</li>
+            <li className="hover:scale-105 transition-all ease-in-out">Current Openings</li>
+            <li className="hover:scale-105 transition-all ease-in-out">Career Page</li>
           </ul>
         </div>
 
         <div className="p-4 col-span-2 font-semibold text-lg">
           Official Address
         </div>
-        <div className="p-4 col-span-3">
+        <div className="p-4 col-span-3 ">
           <span className="font-semibold text-lg">Social Media presence</span>
           <ul className="text-sm">
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <FacebookOutlinedIcon /> Facebook
             </li>
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <TwitterIcon /> Twitter
             </li>
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <InstagramIcon /> Instagram
             </li>
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <LinkedInIcon /> LinkedIn
             </li>
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <a
                 href={Youtube_Channel_Link}
                 target="_blank"
@@ -52,7 +52,7 @@ const Footer = () => {
                 <YouTubeIcon /> YouTube
               </a>
             </li>
-            <li>
+            <li className="hover:scale-105 transition-all ease-in-out">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon /> Whatsapp
               </a>

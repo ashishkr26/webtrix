@@ -10,24 +10,24 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   return isMenuOpen === false ? null : (
-    <div className="shadow-lg bg-gray-100 w-72 h-full fixed  z-50">
+    <div className="shadow-lg bg-gray-100 w-64 h-full fixed  z-50">
       <ul className="my-4  text-xl font-semibold">
         <Link to="/">
-          <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+          <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 transition-all ease-in-out">
             <span className="text-emerald-600">
               <HomeIcon />
             </span>
             <span className="mt-2 px-2">Home</span>
           </li>
         </Link>
-        <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+        <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 transition-all ease-in-out">
           <span className="text-emerald-600">
             <CategoryIcon />
           </span>
           <span className="mt-2 px-2">Products</span>
         </li>
         <Link to="/services">
-          <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+          <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 transition-all ease-in-out">
             <span className="text-emerald-600">
               <StreamIcon />
             </span>
@@ -35,14 +35,14 @@ const SideBar = () => {
           </li>
         </Link>
         <Link to="/contact-us">
-          <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+          <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 transition-all ease-in-out">
             <span className="text-emerald-600">
               <CableIcon />
             </span>
             <span className="mt-2 px-2">Contact Us</span>
           </li>
         </Link>
-        <li className="cursor-pointer hover:bg-white flex items-center list-none p-2">
+        <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 transition-all ease-in-out">
           <span className="text-emerald-600">
             <HelpIcon />
           </span>
