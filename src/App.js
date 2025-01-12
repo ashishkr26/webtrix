@@ -17,6 +17,7 @@ import MobileAppService from "./components/services/MobileAppService";
 import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
 import ContactUs from "./components/ContactUs";
+import Reviews from "./components/Reviews";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -29,10 +30,11 @@ function App() {
           element: (
             <>
               <MainContainer />
-              <ChatBot />
-              <HomeCarousel />
+              <ChatBot />              
               <Services />
               <Faq />
+              <HomeCarousel />
+              <Reviews/>
               {/* <Footer/> */}
             </>
           ),
