@@ -11,7 +11,7 @@ const Reviews = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    arrows: false, // Optional: Hides the navigation arrows for a cleaner look
+    arrows: true,
   };
 
   return (
@@ -19,16 +19,16 @@ const Reviews = () => {
       <h1 className="text-3xl font-bold text-center py-4">
         Hear From Our Happy Clients
       </h1>
-      <div className="max-w-3xl mx-auto my-4">
+      <div className="m-10">
         <Slider {...settings}>
-          <div className="p-6 bg-white rounded-lg shadow-md text-center">
+          <div className="p-6 m-4 bg-white shadow-md text-center flex flex-col h-full">
             <p className="text-lg italic">
               "Webtrix Solutions transformed our online presence! Their
               expertise in web development helped us attract more customers."
             </p>
             <h3 className="mt-4 font-semibold text-gray-700">- Anita Sharma</h3>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow-md text-center">
+          <div className="p-6 m-4 bg-white shadow-md text-center flex flex-col h-full">
             <p className="text-lg italic">
               "The team at Webtrix Solutions is professional, creative, and
               highly responsive. They built a user-friendly website that
@@ -36,7 +36,7 @@ const Reviews = () => {
             </p>
             <h3 className="mt-4 font-semibold text-gray-700">- Rajiv Mehta</h3>
           </div>
-          <div className="p-6 bg-white rounded-lg shadow-md text-center">
+          <div className="p-6 m-4 bg-white shadow-md text-center flex flex-col h-full">
             <p className="text-lg italic">
               "Thanks to Webtrix Solutions, we now have a sleek, modern website
               that has boosted our credibility and sales. Highly recommend their
