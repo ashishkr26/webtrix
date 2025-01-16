@@ -5,6 +5,7 @@ import developement from "../../assets/web-dev-service/development.png";
 import testing from "../../assets/web-dev-service/testing.png";
 import deployement from "../../assets/web-dev-service/deployement.png";
 import EnquiryForm from "../EnquiryForm";
+import WebDevelopmentFaq from "./servicesFaq/WebDevelopementFaq";
 
 const WebDevelopmentServicePage = () => {
   return (
@@ -23,7 +24,6 @@ const WebDevelopmentServicePage = () => {
       <section className="py-10 px-6 bg-white font-poppins">
         <h2 className="text-3xl font-bold text-center mb-6">How We Work</h2>
         <div className="grid md:grid-cols-3 gap-20">
-
           <div className="p-2 shadow-lg rounded-sm text-center bg-gray-200">
             <div className="text-blue-600 text-xl font-bold mb-4">1</div>
             <h3 className=" font-bold mb-2">Requirement Gathering</h3>
@@ -127,10 +127,15 @@ const WebDevelopmentServicePage = () => {
         </button>
       </section>
 
-      <div className="py-10 px-6">
-        <h2 className="text-3xl font-bold mx-12 mb-6">Contact Us</h2>
-        <div className=" w-1/2 border shadow-md">
-          <EnquiryForm />
+      <div className="my-6 mx-8 flex flex-row justify-between">
+        <div>
+          <h2 className="text-3xl font-bold mx-12 mb-6">Contact Us</h2>
+          <div className=" border shadow-md w-[560px]">
+            <EnquiryForm />
+          </div>
+        </div>
+        <div className="">
+          <WebDevelopmentFaq />
         </div>
       </div>
     </div>
