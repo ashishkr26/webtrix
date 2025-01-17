@@ -7,34 +7,29 @@ const WebDevelopmentFaq = () => {
 
   const faqs = [
     {
-      question: "What services does Webtrix Solutions offer?",
+      question: "What makes Webtrix Solutions unique in web development?",
       answer:
-        "We offer website design, development, management, optimization, and other digital solutions tailored to your business needs.",
+        "We focus on delivering custom, scalable, and user-friendly websites tailored to your business needs while ensuring the best user experience.",
     },
     {
-      question: "Do you provide website maintenance services?",
+      question: "Do you provide mobile-friendly website designs?",
       answer:
-        "Yes, we provide ongoing website maintenance to ensure your site is secure, up-to-date, and running smoothly.",
+        "Yes, all our websites are designed to be fully responsive, ensuring seamless performance across all devices.",
     },
     {
-      question: "Can you create websites for startups?",
+      question: "Can you help redesign an existing website?",
       answer:
-        "Absolutely! We specialize in building websites for startups, ensuring they are professional, scalable, and aligned with your brand.",
+        "Absolutely! We can revamp your existing website to enhance its design, functionality, and performance.",
     },
     {
-      question: "What industries do you cater to?",
+      question: "What kind of support do you offer after website delivery?",
       answer:
-        "We cater to a wide range of industries, including retail, healthcare, education, technology, and more.",
+        "We offer post-launch support, including maintenance, updates, and troubleshooting, to keep your website running smoothly.",
     },
     {
-      question: "How long does it take to build a website?",
+      question: "Do you offer integration with CMS platforms like WordPress?",
       answer:
-        "The timeline depends on the complexity of the project. Typically, it can range from 2 to 6 weeks for most websites.",
-    },
-    {
-      question: "Do you offer custom solutions?",
-      answer:
-        "Yes, all our solutions are tailored to meet your specific business requirements and goals.",
+        "Yes, we can build websites using popular CMS platforms like WordPress, or create custom CMS solutions tailored to your needs.",
     },
   ];
 
@@ -43,7 +38,7 @@ const WebDevelopmentFaq = () => {
   };
 
   return (
-    <div className="faq-section ">
+    <div className="faq-section">
       <h2 className="text-2xl font-bold mb-4 py-4 text-gray-800">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (

@@ -4,6 +4,7 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import CodeIcon from '@mui/icons-material/Code';
 import SecurityIcon from '@mui/icons-material/Security';
 import EnquiryForm from '../EnquiryForm';
+import MobileAppDevelopmentFaq from './servicesFaq/MobileAppDevelopmentFaq';
 
 const MobileAppService = () => {
   return (
@@ -86,9 +87,17 @@ const MobileAppService = () => {
       </section>
       <div className="py-10 px-6">
         <h2 className="text-3xl font-bold mx-12 mb-6">Contact Us</h2>
-        <div className=" w-1/2 border shadow-md">
-          <EnquiryForm />
+        <div className="my-6 mx-8 flex flex-row justify-between">
+        <div>
+          <h2 className="text-3xl font-bold mx-12 mb-6">Contact Us</h2>
+          <div className=" border shadow-md w-[560px]">
+            <EnquiryForm />
+          </div>
         </div>
+        <div className="">
+          <MobileAppDevelopmentFaq/>
+        </div>
+      </div>
       </div>
 
     
