@@ -3,6 +3,7 @@ import { serviceData } from "../assets/mockData";
 import ServiceCard from "./ServiceCard";
 import { useNavigate } from "react-router-dom";
 import Choose from "./Choose";
+import InfoCards from "./InfoCards";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ const Services = () => {
       </div>
     </div>
     <Choose/>
+    <InfoCards/>
   </>
   
   );
