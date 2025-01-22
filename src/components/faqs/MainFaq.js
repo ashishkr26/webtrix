@@ -42,7 +42,7 @@ const MainFaq = () => {
               onClick={() =>
                 setActiveAnswer(activeAnswer === index ? null : index)
               }
-              className="text-lg font-semibold mb-2 cursor-pointer"
+              className="lg:text-lg md:text-base sm:text-sm font-semibold mb-2 cursor-pointer"
             >
               <div className="flex justify-between">
                 <span>{faq.question}</span>

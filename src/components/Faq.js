@@ -13,7 +13,7 @@ const Faq = () => {
       }}
       className="flex flex-col bg-gray-50  font-poppins items-end h-full text-gray-800 "
     >
-      <div className=" font-poppins text-5xl p-4   ">
+      <div className=" font-poppins  lg:text-4xl  md:text-xl sm:text-sm p-4   ">
         Frequently Asked Questions
       </div>
       <div className="p-4 mt-4 w-3/4">
