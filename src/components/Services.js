@@ -10,7 +10,7 @@ const Services = () => {
   return (
   <>
     <div className="p-4 bg-clay my-10 font-poppins text-gray-800">
-      <div className=" text-5xl font-semibold my-10 mx-24 text-center">
+      <div className=" lg:text-5xl md:text-2xl sm:text-xl font-semibold my-10 mx-24 text-center">
         Empowering Businesses with Software and Web Excellence
       </div>
       <div className="flex flex-row flex-wrap justify-between">
