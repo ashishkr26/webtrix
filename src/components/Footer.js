@@ -16,8 +16,8 @@ const Footer = () => {
     <>
       <div className="bg-gray-800 h-96 mt-16 text-white grid grid-cols-12 font-poppins p-4">
         <div className="p-4 col-span-2">
-          <span className="text-lg font-semibold">Important Links</span>
-          <ul className="text-sm">
+          <span className="lg:text-lg md:text-sm sm:text-xs xs:text-xs font-semibold">Important Links</span>
+          <ul className="lg:text-sm md:text-xs sm:text-xs">
             <li className="hover:scale-105 transition-all ease-in-out">Contact Us</li>
             <li className="hover:scale-105 transition-all ease-in-out">Support</li>
             <li className="hover:scale-105 transition-all ease-in-out">Current Openings</li>
@@ -25,12 +25,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="p-4 col-span-2 font-semibold text-lg">
+        <div className="p-4 col-span-2 font-semibold lg:text-lg md:text-sm sm:text-xs xs:text-xs">
           Official Address
         </div>
         <div className="p-4 col-span-3 ">
-          <span className="font-semibold text-lg">Social Media presence</span>
-          <ul className="text-sm">
+          <span className="font-semibold lg:text-lg md:text-sm sm:text-xs xs:text-xs">Social Media presence</span>
+          <ul className="lg:text-sm md:text-xs sm:text-xs">
             <li className="hover:scale-105 transition-all ease-in-out">
               <FacebookOutlinedIcon /> Facebook
             </li>
@@ -60,8 +60,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="p-4 col-span-5">
-          <h2 className="font-semibold text-lg">About Webtrix</h2>
-          <p className="text-sm py-2">
+          <h2 className="font-semibold lg:text-lg md:text-sm sm:text-xs xs:text-xs">About Webtrix</h2>
+          <p className="lg:text-sm md:text-xs sm:text-xs py-2">
             Webtrix Solutions is a leading technology provider based in India,
             specializing in web development, software development, mobile app
             development, and digital marketing. Focused on empowering SMEs,
@@ -73,7 +73,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="h-10 bg-yellow-600  flex justify-center items-center font-poppins  text-gray-50 ">
+      <div className="h-10 bg-yellow-600  flex justify-center items-center font-poppins lg:text-base md:text-sm sm:text-xs xs:text-xs   text-gray-50 ">
         © 2024 Webtrix Solutions. All rights reserved.
       </div>
     </>

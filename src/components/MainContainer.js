@@ -13,12 +13,12 @@ const MainContainer = () => {
       }}
       className=" p-2 flex flex-col w-auto items-start bg-gray-50 font-poppins"
     >
-      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-12 sm:h-16 hover:scale-105 transition-all ease-in-out">
+      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-14 sm:h-12 xs:h-10 hover:scale-105 transition-all ease-in-out">
         <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800">
           Empower Your Business with Our IT Solutions
         </span>
       </div>
-      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 sm:h-12 hover:scale-105 transition-all ease-in-out">
+      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-14 sm:h-12 xs:h-10 hover:scale-105 transition-all ease-in-out">
         <Link to="/web-developement-service">
           <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800 ">
             <span className="relative -top-1">
@@ -28,7 +28,7 @@ const MainContainer = () => {
           </span>
         </Link>
       </div>
-      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 sm:h-12 hover:scale-105 transition-all ease-in-out">
+      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-14 sm:h-12 xs:h-10 hover:scale-105 transition-all ease-in-out">
         <Link to="/web-management-service">
           <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800">
             <span className="relative -top-1">
@@ -38,7 +38,7 @@ const MainContainer = () => {
           </span>
         </Link>
       </div>
-      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 sm:h-12 hover:scale-105 transition-all ease-in-out">
+      <div className="p-2  m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-14 sm:h-12 xs:h-10 hover:scale-105 transition-all ease-in-out">
         <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800">
           <span className="relative -top-1">
             <AutoAwesomeMotionTwoToneIcon />
@@ -46,7 +46,7 @@ const MainContainer = () => {
           SEO - Search Engine Optimization
         </span>
       </div>
-      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 sm:h-12 hover:scale-105 transition-all ease-in-out">
+      <div className="p-2 m-2 bg-yellow-400 rounded-r-full lg:h-16 md:h-14 sm:h-12 xs:h-10 hover:scale-105 transition-all ease-in-out">
         <Link to="/mobile-app-service">
           <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800">
             <span className="relative -top-1">
