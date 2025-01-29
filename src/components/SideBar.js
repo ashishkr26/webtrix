@@ -43,12 +43,14 @@ const SideBar = () => {
             <span className="mt-2 px-2">Contact Us</span>
           </li>
         </Link>
+        <Link to ="/quote-on-demand">
         <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 hover:bg-white  transition-all ease-in-out">
           <span className="text-yellow-500">
             <RequestQuoteIcon />
           </span>
           <span className="mt-2 px-2">Request A Demo</span>
         </li>
+        </Link>
         <li className="cursor-pointer  flex items-center list-none p-2 hover:scale-105 hover:bg-white  transition-all ease-in-out">
           <span className="text-yellow-500">
             <HelpIcon />

@@ -18,6 +18,7 @@ import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
 import ContactUs from "./components/ContactUs";
 import Reviews from "./components/Reviews";
+import Pricing from "./components/Pricing";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -75,6 +76,10 @@ function App() {
           path: "/mobile-app-service",
           element: <MobileAppService />,
         },
+        {
+          path:"/pricing",
+          element:<Pricing/>
+        }
       ],
     },
   ]);

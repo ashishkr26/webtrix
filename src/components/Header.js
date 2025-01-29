@@ -34,12 +34,12 @@ const Header = () => {
               Home
             </li>
           </Link>
-          <Link to="/">
+          <Link to="/pricing">
             <li
               tabIndex={0}
               className="p-2 hover:scale-110 transition-all duration-300 ease-in-out"
             >
-              Products
+              Pricing
             </li>
           </Link>
           <Link to="/services">
@@ -51,7 +51,7 @@ const Header = () => {
         </ul>
         <div className="px-4">
           <input
-            className="hidden lg:block lg:w-[500px] md:w-56  p-2 rounded-full text-gray-800 font-light text-sm md:text-base"
+            className="hidden lg:block lg:w-[500px] md:w-56  p-2 rounded-full text-gray-800 font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-yellow-500"
             type="text"
             placeholder="Search"
             ref={searchText}
