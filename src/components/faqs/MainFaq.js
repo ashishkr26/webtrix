@@ -52,7 +52,7 @@ const MainFaq = () => {
               </div>
             </h3>
             {activeAnswer === index && (
-              <p className="text-gray-900 text-sm">{faq.answer}</p>
+              <p className="text-gray-900 text-sm bg-gray-200 p-2">{faq.answer}</p>
             )}
           </div>
         ))}
