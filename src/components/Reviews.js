@@ -8,8 +8,8 @@ const Reviews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    speed: 500,
-    autoplaySpeed: 500,
+    speed: 2000,
+    // autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: true,
   };
@@ -65,18 +65,18 @@ const Reviews = () => {
 
       <Slider
         {...settings}
-        className="mx-32 p-4 flex justify-center items-center text-center"
+        className="mx-48  p-4 flex justify-center items-center text-center"
       >
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="p-6 bg-white shadow-md text-center flex flex-col justify-center items-center h-[240px] w-2/3 rounded-lg  -space-x-5"
+            className="p-6 bg-white shadow-md text-center flex flex-col justify-center items-center h-72 w-2/3 rounded-lg  -space-x-5"
           >
             <p className="text-lg italic">{`"${review.text}"`}</p>
             <h3 className="mt-4 font-semibold text-gray-700">
               - {review.author}
             </h3>
-            <p>{review.ratings}</p>
+            <p className="">{review.ratings}</p>
           </div>
         ))}
       </Slider>

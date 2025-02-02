@@ -39,7 +39,9 @@ const WebDevelopmentFaq = () => {
 
   return (
     <div className="faq-section">
-      <h2 className="text-2xl font-bold mb-4 py-4 text-gray-800">Frequently Asked Questions</h2>
+      <h2 className="text-2xl font-bold mb-4 py-4 text-gray-800">
+        Frequently Asked Questions
+      </h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
@@ -49,10 +51,12 @@ const WebDevelopmentFaq = () => {
           >
             <h3 className="text-lg font-semibold flex justify-between items-center text-gray-700">
               {faq.question}
-              <span>{activeIndex === index ? <RemoveIcon /> : <AddIcon />}</span>
+              <span>
+                {activeIndex === index ? <RemoveIcon /> : <AddIcon />}
+              </span>
             </h3>
             {activeIndex === index && (
-              <p className="mt-2 text-gray-700">{faq.answer}</p>
+              <p className="mt-2 p-2 text-gray-700 text-sm">{faq.answer}</p>
             )}
           </div>
         ))}

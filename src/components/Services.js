@@ -18,8 +18,8 @@ const Services = () => {
           <ServiceCard key={service.id} item={service} />
         ))}
       </div>
-      <div className="flex justify-center hover:scale-105 transition-all ease-in-out">
-        <button onClick={()=>navigate("/services")} className="bg-amber-500 text-2xl font-semibold my-10 mx-24 p-4 rounded-md text-white ">
+      <div className="flex justify-center ">
+        <button onClick={()=>navigate("/services")} className="bg-amber-500 text-2xl font-semibold my-10 mx-24 p-4 rounded-md text-white hover:scale-105 transition-all ease-in-out">
           VIEW ALL SERVICES
         </button>
       </div>

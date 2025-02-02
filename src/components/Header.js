@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <div className="font-poppins bg-yellow-400 text-white p-2 shadow-lg grid grid-flow-col grid-cols-12  justify-between items-center sticky top-0 z-20">
+    <div className="font-poppins bg-[#ffd801]  p-2 shadow-lg grid grid-flow-col text-white grid-cols-12  justify-between items-center sticky top-0 z-20">
       {/* Left Menu */}
       <div
         onClick={handleToggleMenu}
@@ -28,7 +28,7 @@ const Header = () => {
         )}
       </div>
       <div className="col-span-7 flex">
-        <ul className="flex  items-center font-semibold space-x-2 lg:text-base md:text-sm sm:text-sx xs:text-xs">
+        <ul className="flex  items-center space-x-2 lg:text-base md:text-sm sm:text-sx xs:text-xs">
           <Link to="/">
             <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
               Home
@@ -62,7 +62,7 @@ const Header = () => {
       {/* Right Button */}
       <div className="col-span-4  flex justify-end  ">
         <Link to="quote-on-demand">
-          <button className="lg:text-base md:text-sm sm:text-sx xs:text-xs bg-gradient-to-r from-gray-800 to-gray-400 text-sm  px-4 py-2 rounded-md  font-semibold hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center">
+          <button className="lg:text-base text-gray-100 md:text-sm sm:text-sx xs:text-xs bg-gray-700 text-sm  px-4 py-2 rounded-md  hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center">
             Demo On Demand
           </button>
         </Link>
