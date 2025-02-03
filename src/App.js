@@ -10,7 +10,7 @@ import WebtrixSevice from "./components/services/WebtrixSevice";
 import QuoteOnDemand from "./components/QuoteOnDemand";
 import HomeCarousel from "./components/HomeCarousel";
 import WebDevelopmentServicePage from "./components/services/WebDevelomentServicePage";
-import WebManagementServicePage from "./components/services/WebDevelomentServicePage"
+import WebManagementServicePage from "./components/services/WebManagementServicePage"
 import DigitalMarketingServicePage from "./components/services/DigitalMarketingService";
 import UIUXService from "./components/services/UIUXService";
 import MobileAppService from "./components/services/MobileAppService";

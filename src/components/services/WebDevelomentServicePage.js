@@ -1,9 +1,9 @@
 import React from "react";
 import requirement from "../../assets/web-dev-service/requirement.png";
-import planning from "../../assets/web-dev-service/planning.png";
-import developement from "../../assets/web-dev-service/development.png";
-import testing from "../../assets/web-dev-service/testing.png";
-import deployement from "../../assets/web-dev-service/deployement.png";
+import planning from "../../assets/images/web-dev-service/planning.png";
+import developement from "../../assets/images/web-dev-service/development.png";
+import testing from "../../assets/images/web-dev-service/testing.png";
+import deployement from "../../assets/images/web-dev-service/deployement.png";
 import EnquiryForm from "../EnquiryForm";
 import WebDevelopmentFaq from "./servicesFaq/WebDevelopementFaq";
 
@@ -28,7 +28,11 @@ const WebDevelopmentServicePage = () => {
             <div className="text-blue-600 text-xl font-bold mb-4">1</div>
             <h3 className=" font-bold mb-2">Requirement Gathering</h3>
             <div className="flex justify-center items-center">
-              <img className="h-40 rounded-md " alt="requirements" src={requirement} />
+              <img
+                className="h-40 rounded-md "
+                alt="requirements"
+                src={requirement}
+              />
             </div>
             <p className="text-sm my-2 py-2 px-4">
               Understand your business goals, target audience, and technical
@@ -39,7 +43,11 @@ const WebDevelopmentServicePage = () => {
             <div className="text-blue-600 text-xl font-bold mb-4">2</div>
             <h3 className=" font-bold mb-2">Planning & Design</h3>
             <div className="flex justify-center items-center">
-              <img className="h-40 rounded-md " alt="requirements" src={planning} />
+              <img
+                className="h-40 rounded-md "
+                alt="requirements"
+                src={planning}
+              />
             </div>
             <p className="text-sm my-2 py-2 px-4">
               Create wireframes, mockups, and project plans to visualize the
@@ -50,7 +58,11 @@ const WebDevelopmentServicePage = () => {
             <div className="text-blue-600 text-xl font-bold mb-4">3</div>
             <h3 className=" font-bold mb-2">Development</h3>
             <div className="flex justify-center items-center">
-              <img className="h-40 rounded-md  " alt="requirements" src={developement} />
+              <img
+                className="h-40 rounded-md  "
+                alt="requirements"
+                src={developement}
+              />
             </div>
             <p className="text-sm my-2 py-2 px-4">
               Build the frontend and backend using the latest technologies,
@@ -61,7 +73,11 @@ const WebDevelopmentServicePage = () => {
             <div className="text-blue-600 text-xl font-bold mb-4">4</div>
             <h3 className=" font-bold mb-2">Testing</h3>
             <div className="flex justify-center items-center">
-              <img className="h-40 rounded-md  " alt="requirements" src={testing} />
+              <img
+                className="h-40 rounded-md  "
+                alt="requirements"
+                src={testing}
+              />
             </div>
             <p className="text-sm my-2 py-2 px-4">
               Conduct thorough testing to ensure the website is bug-free, fast,
@@ -72,7 +88,11 @@ const WebDevelopmentServicePage = () => {
             <div className="text-blue-600 text-xl font-bold mb-4">5</div>
             <h3 className=" font-bold mb-2">Deployment</h3>
             <div className="flex justify-center items-center">
-              <img className="h-40 rounded-md  " alt="requirements" src={deployement} />
+              <img
+                className="h-40 rounded-md  "
+                alt="requirements"
+                src={deployement}
+              />
             </div>
             <p className="text-sm my-2 py-2 px-4">
               Launch the website on a live server and ensure smooth operation

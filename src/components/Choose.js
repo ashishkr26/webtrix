@@ -15,7 +15,7 @@ const Choose = () => {
       ></div>
 
       {/* Content */}
-      <div className="relative flex justify-center z-10 text-white font-poppins">
+      <div className="relative flex justify-center  text-white font-poppins">
         <div className="bg-amber-400 h-64 px-16 w-1/3 p-4 lg:text-4xl  md:text-xl sm:text-sm flex justify-center items-center">
           What Makes Webtrix the Right Choice. ?
         </div>
