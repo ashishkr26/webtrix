@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../assets/store/appSlice";
 
 const Header = () => {
-  const searchText = useRef();
+  // const searchText = useRef();
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
@@ -34,6 +34,11 @@ const Header = () => {
               Home
             </li>
           </Link>
+          <Link to="/services">
+            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+              Services
+            </li>
+          </Link>
           <Link to="/pricing">
             <li
               tabIndex={0}
@@ -44,19 +49,46 @@ const Header = () => {
           </Link>
           <Link to="/services">
             <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
-              Services
+              Products
             </li>
           </Link>
-          {/* Search Input */}
+          
+          <Link to="/services">
+            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+              Portfolio
+            </li>
+          </Link>
+          <Link to="/clientele">
+            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+              Clientele
+            </li>
+          </Link>
+          <Link to="/contact-us">
+            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out whitespace-nowrap">
+              Contact Us
+            </li>
+          </Link>
+          <Link to="/services">
+            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out whitespace-nowrap">
+              Hire Developers
+            </li>
+          </Link>
+          {/* <Link to="quote-on-demand">
+          <button className="lg:text-base border border-white text-gray-100 md:text-sm sm:text-sx xs:text-xs bg-gray-700 text-sm  px-4 py-2 rounded-md  hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center">
+            Demo On Demand
+          </button>
+        </Link> */}
+       
         </ul>
-        <div className="px-4">
+{/* Search Input */}
+        {/* <div className="px-4">
           <input
             className="hidden lg:block lg:w-[500px] md:w-56  p-2 rounded-full text-gray-800 font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-yellow-500"
             type="text"
             placeholder="Search"
             ref={searchText}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Right Button */}

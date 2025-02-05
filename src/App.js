@@ -18,7 +18,8 @@ import { Provider } from "react-redux";
 import appStore from "./assets/store/appStore";
 import ContactUs from "./components/ContactUs";
 import Reviews from "./components/Reviews";
-import Pricing from "./components/Pricing";
+import Pricing from "./components/pages/Pricing";
+import Clientele from "./components/pages/Clientele";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -79,6 +80,10 @@ function App() {
         {
           path:"/pricing",
           element:<Pricing/>
+        },
+        {
+          path:"/clientele",
+          element:<Clientele/>
         }
       ],
     },
