@@ -1,5 +1,5 @@
 import React from "react";
-import requirement from "../../assets/web-dev-service/requirement.png";
+import requirement from "../../assets/images/web-dev-service/requirement.png";
 import planning from "../../assets/images/web-dev-service/planning.png";
 import developement from "../../assets/images/web-dev-service/development.png";
 import testing from "../../assets/images/web-dev-service/testing.png";

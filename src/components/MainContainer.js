@@ -32,7 +32,7 @@ const MainContainer = () => {
         <Link to="/web-management-service">
           <span className="bg-gray-700 relative top-2 p-2 lg:text-2xl md:text-base sm:text-sm rounded-r-full font-semibold text-white hover:bg-gray-800">
             <span className="relative -top-1">
-              <AutoAwesomeMotionTwoToneIcon />
+              <AutoAwesomeMotionTwoToneIcon /> 
             </span>{" "}
             Website Management
           </span>
