@@ -20,6 +20,7 @@ import ContactUs from "./components/ContactUs";
 import Reviews from "./components/Reviews";
 import Pricing from "./components/pages/Pricing";
 import Clientele from "./components/pages/Clientele";
+import HireDeveloper from "./components/pages/HireDeveloper";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -84,6 +85,10 @@ function App() {
         {
           path:"/clientele",
           element:<Clientele/>
+        },
+        {
+          path:"/hiredeveloper",
+          element:<HireDeveloper/>
         }
       ],
     },

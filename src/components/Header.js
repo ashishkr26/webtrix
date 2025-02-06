@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../assets/store/appSlice";
+import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
+import FilterCenterFocusOutlinedIcon from "@mui/icons-material/FilterCenterFocusOutlined";
 
 const Header = () => {
   // const searchText = useRef();
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+  const [showProductMenu, setShowProductMenu] = useState(false);
 
   const handleToggleMenu = () => {
     dispatch(toggleMenu());
@@ -48,11 +51,28 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/services">
-            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+            {/* <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
               Products
-            </li>
+            </li> */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowProductMenu(true)}
+              onMouseLeave={() => setShowProductMenu(false)}
+            >
+              <li className="group hover:scale-110 transition-all ease-in-out m-2 flex items-center duration-300 cursor-pointer">
+                Products
+                <ChevronRightOutlinedIcon
+                  className={`transition-transform duration-5000 ease-in-out transform  ${
+                    showProductMenu ? "rotate-90" : "rotate-0"
+                  }`}
+                />
+              </li>
+
+              {/* Show Product Menu */}
+              {showProductMenu && <ProductMenu />}
+            </div>
           </Link>
-          
+
           <Link to="/services">
             <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
               Portfolio
@@ -68,27 +88,12 @@ const Header = () => {
               Contact Us
             </li>
           </Link>
-          <Link to="/services">
+          <Link to="/hiredeveloper">
             <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out whitespace-nowrap">
               Hire Developers
             </li>
           </Link>
-          {/* <Link to="quote-on-demand">
-          <button className="lg:text-base border border-white text-gray-100 md:text-sm sm:text-sx xs:text-xs bg-gray-700 text-sm  px-4 py-2 rounded-md  hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center">
-            Demo On Demand
-          </button>
-        </Link> */}
-       
         </ul>
-{/* Search Input */}
-        {/* <div className="px-4">
-          <input
-            className="hidden lg:block lg:w-[500px] md:w-56  p-2 rounded-full text-gray-800 font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            type="text"
-            placeholder="Search"
-            ref={searchText}
-          />
-        </div> */}
       </div>
 
       {/* Right Button */}
@@ -104,3 +109,39 @@ const Header = () => {
 };
 
 export default Header;
+
+export const ProductMenu = () => {
+  const products = [
+    "Zomato Clone",
+    "Swiggy Clone",
+    "Amazon Clone",
+    "Hotstar Clone",
+    "Netflix Clone",
+    "Bigbasket Clone",
+    "Alibaba Clone",
+    "Shaadi.com Clone",
+    "Ola App Clone",
+  ];
+
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  return (
+    <div className="absolute top-6 left-0 bg-[#ffd801] shadow-lg p-4 rounded-md w-48 md:w-56 lg:w-64 z-50">
+      <ul className="text-sm">
+        {products.map((product, index) => (
+          <li
+            key={index}
+            className="p-2 hover:scale-105 transition-all ease-in-out cursor-pointer flex items-center gap-2"
+            onMouseEnter={() => setHoveredItem(index)}
+            onMouseLeave={() => setHoveredItem(null)}
+          >
+            {hoveredItem === index && (
+              <FilterCenterFocusOutlinedIcon sx={{ fontSize: 14 }} />
+            )}
+            {product}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
