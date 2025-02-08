@@ -38,9 +38,26 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/services">
-            <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
-              Services
-            </li>
+            {/* <li className="p-2 hover:scale-110 transition-all duration-300 ease-in-out">
+              Products
+            </li> */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowProductMenu(true)}
+              onMouseLeave={() => setShowProductMenu(false)}
+            >
+              <li className="group hover:scale-110 transition-all ease-in-out m-2 flex items-center duration-300 cursor-pointer">
+                Services
+                <ChevronRightOutlinedIcon
+                  className={`transition-transform duration-5000 ease-in-out transform  ${
+                    showProductMenu ? "rotate-90" : "rotate-0"
+                  }`}
+                />
+              </li>
+
+              {/* Show Product Menu */}
+              {showProductMenu && <ProductMenu />}
+            </div>
           </Link>
           <Link to="/pricing">
             <li
@@ -111,7 +128,7 @@ const Header = () => {
 export default Header;
 
 export const ProductMenu = () => {
-  const products = [
+  const productsMenuItems = [
     "Zomato Clone",
     "Swiggy Clone",
     "Amazon Clone",
@@ -128,7 +145,7 @@ export const ProductMenu = () => {
   return (
     <div className="absolute top-6 left-0 bg-[#ffd801] shadow-lg p-4 rounded-md w-48 md:w-56 lg:w-64 z-50">
       <ul className="text-sm">
-        {products.map((product, index) => (
+        {productsMenuItems.map((product, index) => (
           <li
             key={index}
             className="p-2 hover:scale-105 transition-all ease-in-out cursor-pointer flex items-center gap-2"
