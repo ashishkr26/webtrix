@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="p-4 col-span-5">
           <h2 className="font-semibold lg:text-lg md:text-sm sm:text-xs xs:text-xs">About Webtrix</h2>
-          <p className="lg:text-sm md:text-xs sm:text-xs py-2">
+          <p className="lg:text-sm md:text-xs sm:text-xs xs:text-xs py-2">
             Webtrix Solutions is a leading technology provider based in India,
             specializing in web development, software development, mobile app
             development, and digital marketing. Focused on empowering SMEs,
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="h-10 bg-yellow-600  flex justify-center items-center font-poppins lg:text-base md:text-sm sm:text-xs xs:text-xs   text-gray-50 ">
-        © 2024 Webtrix Solutions. All rights reserved.
+        © 2025 Webtrix Solutions. All rights reserved.
       </div>
     </>
   );

@@ -19,6 +19,7 @@ const ContactUs = () => {
           <h1 className="m-2 p-2 text-2xl font-poppins font-semibold text-slate-800">
             We’d love to hear from you! Whether you have questions, need
             support, or want to collaborate, feel free to reach out.
+            Your Information is kept 100% confidential
           </h1>
         </div>
         <div className="w-1/2 m-10 p-10">
