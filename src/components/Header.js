@@ -116,7 +116,7 @@ const Header = () => {
       {/* Right Button */}
       <div className="col-span-4  flex justify-end  ">
         <Link to="quote-on-demand">
-          <button className="lg:text-base border border-white text-gray-100 md:text-sm sm:text-sx xs:text-xs bg-gray-700 text-sm  px-4 py-2 rounded-md  hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center">
+          <button className="lg:text-base border border-white text-gray-100 md:text-sm sm:text-sx xs:text-xs bg-gray-700 text-sm  px-4 py-2 rounded-md  hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap text-center hover:bg-gray-800">
             Demo On Demand
           </button>
         </Link>
