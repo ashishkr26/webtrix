@@ -50,6 +50,10 @@ function App() {
           element: <Login />,
         },
         {
+          path: "/signup",
+          element: <Login />,
+        },
+        {
           path: "/contact-us",
           element: <ContactUs />,
         },
