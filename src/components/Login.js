@@ -5,6 +5,11 @@ const Login = () => {
 
   const handleSubmit = () => {
     console.log("submit called");
+    if (isSignInForm) {
+      console.log("sign in form");
+    } else {
+      console.log("signup form");
+    }
   };
   return (
     <div>
